@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.introducao {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+video {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.galeria {
+  padding: 40px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Diferenciação de tamanhos (opcional) */
+.grande {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.download {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.botao-download {
+  background-color: #0077cc;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.botao-download:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
